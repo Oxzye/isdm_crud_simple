@@ -3,6 +3,9 @@
 @section('title','Listado de Productos')
     
 @section('content')
+
+    <a href="{{ route('products.create') }}" class="btn border border-2 border-light">Agregar</a>
+
     @if ($products->count())
     <div class="container-fluid">
         <div class="row">
@@ -14,7 +17,7 @@
                     </div>
                 @endif
 
-                <a href="{{ route('products.create') }}" class="btn border border-2 border-light">Agregar</a>
+                
             
                 <table class="table table-dark table-striped">
                 <thead>
